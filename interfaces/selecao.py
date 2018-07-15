@@ -29,7 +29,6 @@ class Window(QMainWindow):
         self.botaoMangas = QPushButton('Mangas', self)
         self.botaoMangas.move(20, 40)
         self.botaoMangas.resize(166, 30)
-        #self.botaoMangas.clicked.connect(self.on_pushButton_clicked)
         self.subJanelaMangas = Mangas(self)
         self.botaoMangas.clicked.connect(self.mangas)
 
@@ -39,7 +38,6 @@ class Window(QMainWindow):
         self.botaoAnimes.resize(166, 30)
         self.subJanelaAnimes = Animes(self)
         self.botaoAnimes.clicked.connect(self.animes)
-        #self.botaoMangas.clicked.connect(self.mangas)
 
         # Cria botao de Series
         self.botaoSeries = QPushButton('Series', self)
@@ -47,7 +45,6 @@ class Window(QMainWindow):
         self.botaoSeries.resize(166, 30)
         self.subJanelaSeries = Series(self)
         self.botaoSeries.clicked.connect(self.series)
-        #self.botaoMangas.clicked.connect(self.mangas)
 
         # Cria botao de Filmes
         self.botaoFilmes = QPushButton('Filmes', self)
@@ -55,7 +52,6 @@ class Window(QMainWindow):
         self.botaoFilmes.resize(166, 30)
         self.subJanelaFilmes = Filmes(self)
         self.botaoFilmes.clicked.connect(self.filmes)
-        #self.botaoMangas.clicked.connect(self.mangas)
 
         self.show()
 
