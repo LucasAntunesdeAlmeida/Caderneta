@@ -1,10 +1,10 @@
 import sys
 from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QPushButton, QAction, QLabel, QLineEdit, QMessageBox
 from PyQt5.QtGui import QIcon
-from mangas import *
-from animes import *
-from series import *
-from filmes import *
+from interfaces.mangas import *
+from interfaces.animes import *
+from interfaces.series import *
+from interfaces.filmes import *
 
 class Window(QMainWindow):
     def __init__(self, parent=None):
