@@ -3,10 +3,10 @@ from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QAction, QTableW
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import pyqtSlot
 
-class TabelaMangas(QWidget):
+class Tabela(QWidget):
 
     def __init__(self, parent=None):
-        super(TabelaMangas, self).__init__(parent)
+        super(Tabela, self).__init__(parent)
         self.title = 'PyQt5 table - pythonspot.com'
         self.left = 0
         self.top = 300

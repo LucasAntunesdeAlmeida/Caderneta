@@ -57,7 +57,7 @@ class Window(QMainWindow):
 
     def mangas(self):
         self.subJanelaMangas.show()
-        self.subJanelaMangas.table.show()
+        self.subJanelaMangas.tabela.show()
 
     def animes(self):
         self.subJanelaAnimes.show()
