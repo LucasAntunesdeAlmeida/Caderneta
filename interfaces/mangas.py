@@ -1,6 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QPushButton, QAction, QLabel, QLineEdit, QMessageBox, QTableWidget, QTableWidgetItem, QVBoxLayout
 from PyQt5.QtGui import QIcon
+from interfaces.TabelaMangas import *
 
 class Mangas(QMainWindow):
     def __init__(self, parent=None):
@@ -44,6 +45,8 @@ class Mangas(QMainWindow):
         self.botaoRemover.move(330, 130)
         self.botaoRemover.resize(166, 30)
         self.botaoRemover.clicked.connect(self.remover)
+
+        self.table = TabelaMangas(self)
 
     def procura(self):
         pass
