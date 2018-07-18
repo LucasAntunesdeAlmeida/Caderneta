@@ -10,7 +10,7 @@ class Window(QMainWindow):
     def __init__(self, parent=None):
         super(Window, self).__init__(parent)
         self.titulo = 'Caderneta'
-        self.largura = 205
+        self.largura = 370
         self.altura = 200
         self.initUI()
 
@@ -24,6 +24,17 @@ class Window(QMainWindow):
         self.lbl.setText('Escolha o tipo de Caderneta:')
         self.lbl.resize(160, 30)
         self.lbl.move(20, 10)
+
+        #texto quant mangas
+        self.lbl = QLabel(self)
+        self.lbl.setText('Finalizados')
+        self.lbl.resize(100, 30)
+        self.lbl.move(220, 10)
+
+        self.lbl = QLabel(self)
+        self.lbl.setText('Total')
+        self.lbl.resize(50, 30)
+        self.lbl.move(320, 10)
 
         # Cria botao de Mangas
         self.botaoMangas = QPushButton('Mangas', self)
