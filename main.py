@@ -1,6 +1,6 @@
 import os
 import sys
-from interfaces.selecao import *
+from interfaces.Selection import *
 
 sys.path.insert(0, './interfaces')
 print(sys.path)
